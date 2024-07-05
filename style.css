@@ -1,0 +1,674 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    padding: 2px;
+    border-bottom: 1px solid gray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li.divider {
+    border-right: 1px solid grey; /* Divider style */
+    margin: -10px 5px; /* Adjust margin to create space around the divider */
+    margin-right: -15px;
+    height: 30px; /* Adjust height of the divider */
+}
+
+nav ul li.logo {
+    margin-right: auto; /* Push the logo to the edge */
+    padding-right: 5px;
+}
+
+nav ul li.sign-in {
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+nav ul li.sign-in a {
+    color: orange;
+}
+
+nav ul li.sign-in:hover {
+    background-color: orange;
+}
+
+nav ul li.sign-in a:hover {
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#title-container {
+    text-align: center;
+}
+#wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.search { 
+    width: 50%;
+    margin-left: 25%;
+    padding: 4px;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 5px;
+
+}
+
+.title {
+    margin-top: 40px; /* Adjust margin as needed */
+    color: red;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    font-weight: bold;
+    color: red;
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .bottom {
+    min-width: 400px;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 12px 20px;
+    color: #444444;
+    background-color: #eeeeee;
+    font-weight: normal;
+    font-size: 13px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 2;
+    box-sizing: border-box;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.tooltip:hover .bottom {
+    display: block;
+}
+
+.tooltip .bottom i {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -12px;
+    width: 24px;
+    height: 12px;
+    overflow: hidden;
+}
+
+.tooltip .bottom i::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    background-color: #eeeeee;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.bottom a {
+    text-decoration: none;
+    color: #444444;
+}
+
+.red,
+.orange {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.red {
+    font-size: 40px;
+    color: red;
+}
+
+.orange {
+    font-size: 40px;
+    color: orange;
+}
+
+.button {
+    border-radius: 5px;
+    color: white;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.natural {
+    background-color: white;
+    color: orange;
+    border: 2px solid orange;
+    left: 468px;
+}
+
+.math {
+    background-color: white;
+    color: purple;
+    border: 2px solid purple;
+    left: 640px;
+}
+
+.keyboard {
+    margin-top:10px ;
+    position: absolute;
+    left: 1030px;
+}
+
+.examples {
+    margin-top: 10px;
+    position: absolute;
+    left: 1190px;
+}
+
+.upload {
+    margin-top: 10px;
+    position: absolute;
+    left: 1280px;
+}
+
+.random {
+    margin-top: 10px;
+    position: absolute;
+    left: 1360px;
+}
+
+.wolfram-GPT {
+    text-align: right;
+    margin-top: 60px;
+    width: 450px;
+    position: absolute;
+    left: 550px;
+}
+
+.GPT {
+    text-align: left;
+    margin-top: 50px;
+    width: 150px;
+    position: absolute;
+    left: 1050px;
+    border-style: solid;
+    border-color: #b4d7c1;
+    border-width: 1px;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: #f5faf7;
+}
+
+.GPT-green a {
+    text-decoration: none;
+    color: #3ba169;
+}
+
+.GPT-green {
+    text-align: left;
+    margin-top: 50px;
+    width: 150px;
+    position: absolute;
+    left: 1060px;
+    top: 235px;
+}
+
+#table {
+    position: absolute;
+    text-align: left;
+    top: 350px;
+    left: 500px;
+    width: 800px;
+}
+
+#table a {
+    text-decoration: none;
+}
+
+#table td {
+    padding: 10px;
+}
+
+.Mathematics {
+    color: #a485bd;  
+}
+
+.Science-Technology {
+    color: #67b290;
+}
+
+.Society-Culture {
+    color: #e25d6c;
+}
+
+.Everyday-Life {
+    color: #21b1ba;   
+}
+
+td {
+    height: 30px;
+}
+
+.Math a{
+    color: #a485bd;
+    display: grid;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+} 
+
+.Science a{
+    color: #67b290;
+    display: grid;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 15px;
+}
+
+.Society a{
+    color: #e25d6c;
+    display: grid;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 15px;
+}
+
+.Life a{
+    color: #21b1ba;
+    display: grid;
+    width: 200px;
+    height: 50px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer {
+    display: grid;
+    width: auto;
+    height: 100px;
+    margin-top: 850px;
+    right: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    color: black;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer1 {
+    display: grid;
+    top: 1100px;
+    right: 400px;
+    position: absolute;
+    color: black;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.pro {
+    left: 600px;
+    position: absolute;
+    margin-top: 10px;
+
+}
+
+.pro a {
+    text-decoration: none;
+    color: black;
+}
+
+.pro a:hover {
+    color: orange;
+}
+.apps {
+    left: 635px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.apps a {
+    text-decoration: none;
+    color: black;
+}
+
+.apps a:hover {
+    color: orange;
+}
+
+.product {
+    left: 730px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.product a {
+    text-decoration: none;
+    color: black;
+}
+
+.product a:hover {
+    color: orange;
+}
+
+.business {
+    left: 790px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.business a {
+    text-decoration: none;
+    color: black;
+}
+
+.business a:hover {
+    color: orange;
+}
+
+.API {
+    left: 860px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.API a {
+    text-decoration: none;
+    color: black;
+}
+
+.API a:hover {
+    color: orange;
+}
+
+.LLM {
+    left: 1050px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.LLM a {
+    text-decoration: none;
+    color: black;
+}
+
+.LLM a:hover {
+    color: orange;
+}
+
+.tools {
+    left: 720px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.tools a {
+    text-decoration: none;
+    color: black;
+}
+
+.tools a:hover {
+    color: orange;
+}
+
+.about {
+    left: 850px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.about a {
+    text-decoration: none;
+    color: black;
+}
+
+.about a:hover {
+    color: orange;
+}
+
+.contact {
+    left: 900px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    color: orange;
+}
+
+.connect {
+    left: 960px;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.connect a {
+    text-decoration: none;
+    color: black;
+}
+
+.connect a:hover {
+    color: orange;
+}
+
+.LLC {
+    left: 750px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.LLC a {
+    text-decoration: none;
+    color: black;
+}
+
+.LLC a:hover {
+    color: none
+}
+
+.terms {
+    left: 950px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: black;
+}
+
+.terms a:hover {
+    color: orange;
+}
+
+.privacy {
+    left: 1000px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.privacy a {
+    text-decoration: none;
+    color: black;
+}
+
+.privacy a:hover {
+    color: orange;
+}
+
+.wolfF {
+    left:510px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.wolfF a {
+    text-decoration: none;
+    color: black;
+}
+
+.wolfF a:hover {
+    color: none;
+}
+
+.comF {
+    left: 620px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.comF a {
+    text-decoration: none;
+    color: black;
+}
+
+.comF a:hover {
+    color: orange;
+}
+
+.languagef {
+    left: 720px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.languagef a {
+    text-decoration: none;
+    color: black;
+}
+
+.languagef a:hover {
+    color: orange;
+}
+
+.mathF {
+    left: 860px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.mathF a {
+    text-decoration: none;
+    color: black;
+}
+
+.mathF a:hover {
+    color: orange;
+}
+
+.DemoF {
+    left: 960px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.DemoF a {
+    text-decoration: none;
+    color: black;
+}
+
+.DemoF a:hover {
+    color: orange;
+}
+
+.educationF {
+    left: 1140px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.educationF a {
+    text-decoration: none;
+    color: black;
+}
+
+.educationF a:hover {
+    color: orange;
+}
+
+.worldF {
+    left: 1310px;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.worldF a {
+    text-decoration: none;
+    color: black;
+}
+
+.worldF a:hover {
+    color: orange;
+}
